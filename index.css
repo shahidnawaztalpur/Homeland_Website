@@ -277,6 +277,7 @@ li a{
     right: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
+    pointer-events: none;
   }
 
   .navbar {
@@ -308,7 +309,12 @@ li a{
     font-size: 16px;
   }
 
-  .dropbtn a{
+  
+  
+
+
+
+   .dropbtn a{
     color: white;
     text-decoration: none;
   }
@@ -318,13 +324,12 @@ li a{
   }
 
   .dropdowncontent {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background: white;
     min-width: 150px;
-    z-index: 10;
+    z-index: 3;
   }
 
   .dropdowncontent a {
@@ -336,9 +341,9 @@ li a{
 
   .dropdowncontent a:hover {
     background: #ddd;
-  }
+  } 
 
-  /* Toggle Button */
+  
   .toggle-btn {
     display: none;
     font-size: 24px;
