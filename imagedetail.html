@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="imagedetail.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="meadiaQuery.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <!-- Hero Section Start -->
+  <header>
+
+    <div class="navbar" id="navbar">
+        <div class="logo">Homeland <span class="logo-dot">.</span></div>
+    
+        <!-- Toggle Button -->
+        <div class="toggle-btn" id="toggle-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+    
+        <ul class="menu">
+            <li><a href="#home" class="active">Home</a></li>    
+            <li><a href="#home">Buy</a></li>    
+            <li><a href="#home">Rent</a></li>        
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a href="#">Properties</a>
+                    <i class="fa fa-caret-down drop-icon"></i>
+                </div>
+                <div class="dropdowncontent">
+                    <a href="#team">Condo</a>
+                    <a href="#Pricing">Property Land</a>
+                    <a href="#FAQ">Commercial Building</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#home">Sub Menu<i class="fa fa-caret-down"></i></a>
+                </div>
+            </div>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#blog">About</a></li>
+            <li><a href="#contact">Concat</a></li>
+        </ul>
+    </div>
+
+    
+    
+
+
+     
+    <div class="slide active" style="background-image: url('images/img_1.jpg.webp');">
+      <div class="content">
+        <div class="sale">Big Sale</div>
+        <h1 class="main-text">Welcome to Our Website</h1>
+        <p class="primary-price-text">Starting at $99</p>
+        <button class="heading-btn">Shop Now</button>
+      </div>
+    </div>
+
+<!--    
+    <div class="slide" style="background-image: url('images/img_2.jpg.webp');">
+      <div class="content">
+        <div class="sale">New Arrivals</div>
+        <h1 class="main-text">Latest Collection</h1>
+        <p class="primary-price-text">Discount up to 50%</p>
+        <button class="heading-btn">Explore</button>
+      </div>
+    </div>
+
+    
+    <div class="slide" style="background-image: url('images/img_3.jpg.webp');">
+      <div class="content">
+        <div class="sale">Hot Deal</div>
+        <h1 class="main-text">Best Quality Products</h1>
+        <p class="primary-price-text">Starting from $49</p>
+        <button class="heading-btn">Buy Now</button>
+      </div>
+    </div>
+
+    
+    <div class="slide" style="background-image: url('images/img_4.jpg.webp');">
+      <div class="content">
+        <div class="sale">Limited Offer</div>
+        <h1 class="main-text">Trendy Fashion</h1>
+        <p class="primary-price-text">Special Price Today</p>
+        <button class="heading-btn">Get Offer</button>
+      </div>
+    </div>
+
+    
+    <div class="slide" style="background-image: url('images/img_5.jpg.webp');">
+      <div class="content">
+        <div class="sale">Exclusive</div>
+        <h1 class="main-text">Shop the Look</h1>
+        <p class="primary-price-text">New Style 2025</p>
+        <button class="heading-btn">See More</button>
+      </div>
+    </div> -->
+  </header>
+  <!-- Hero Section End -->
+
+
+
+  <div class="imageContactSection">
+
+<div class="image-content">
+<img id="showImage" alt="">
+
+
+<div class="image-content">
+<div class="price-section">
+  <!-- Price -->
+  <div class="price-content">
+    $2,265,500
+  </div>
+
+  <!-- Details -->
+  <div class="houses-details">
+    <div class="house-det-content">
+      <span>BEDS</span>
+      <span>BATHS</span>
+      <span>SO. FT</span>
+    </div>
+    <div class="house-ino-content">
+      <span>2+</span>
+      <span>2</span>
+      <span>7000</span>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Details -->
+  <div class="house-of-details">
+    <div class="house-det-content">
+      <span>HOME TYPE</span>
+      <span>YEAR BUILT</span>
+      <span>PRICE/SOFT</span>      
+    </div>
+    <div class="house-in-content">
+      <span>Condo</span>
+      <span>2018</span>
+      <span>$250</span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<div class="card-section-contact">
+    <div class="card-contact">
+      <div class="field-contact">
+        <label for="listing-type">LISTING TYPE</label>
+        <select id="listing-type">
+          <option value="">Select Type</option>
+          <option value="Condo">Condo</option>
+          <option value="Commercial Building">Commercial Building</option>
+          <option value="Land Property">Land Property</option>
+        </select>
+      </div>
+  
+      <div class="field-contact">
+        <label for="offer-type">OFFER TYPE</label>
+        <select id="offer-type">
+          <option value="">Select Offer</option>
+          <option value="For Sale">For Sale</option>
+          <option value="For Rent">For Rent</option>
+          <option value="For Lease">For Lease</option>
+        </select>
+      </div>
+  
+      <div class="field-contact">
+        <label for="city-type">SELECT CITY</label>
+        <select id="city-type">
+          <option value="">Select City</option>
+          <option value="New York">New York</option>
+          <option value="Los Angeles">Los Angeles</option>
+          <option value="Chicago">Chicago</option>
+        </select>
+      </div>
+  
+      <div class="field-contact">
+        <button class="secondry-btn">Search</button>
+      </div>
+    </div>
+    <div class="par">
+      <div class="heading">PARAGRAPH</div>
+    <p class="par-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem laborum recusandae nulla at quasi laudantium excepturi temporibus eum magnam doloribus cumque est, unde, autem cupiditate itaque ad assumenda voluptatum illo. Rerum consequuntur ea quos atque vero laboriosam magni iusto explicabo?</p>
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="houseInfo">
+  <h1 class="simples-heading">More Info</h1>
+  <p class="simples-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quia veniam eveniet aliquid voluptatibus placeat nihil labore eos repellat quas.</p>
+  <p class="simples-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum veritatis itaque quis reiciendis voluptas ea nisi dolorem velit tempore explicabo!</p>
+  <p class="simples-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nam exercitationem ut ab perspiciatis quidem modi perferendis omnis magnam doloribus?</p>
+</div>
+
+<div class="gallery">
+  <div class="headings">Gallery</div>
+  <div class="gallery-images">
+    <img src="images/img_2.jpg.webp" alt="">
+    <img src="images/img_1.jpg.webp" alt="">
+    <img src="images/img_3.jpg.webp" alt="">
+    <img src="images/img_4.jpg.webp" alt="">
+    <img src="images/img_5.jpg.webp" alt="">
+    <img src="images/img_6.jpg.webp" alt="">
+    <img src="images/img_7.jpg.webp" alt="">
+    <img src="images/img_8.jpg.webp" alt="">
+    <img src="images/img_6.jpg.webp" alt="">
+    <img src="images/img_3.jpg.webp" alt="">
+    <img src="images/img_2.jpg.webp" alt="">
+    <img src="images/img_8.jpg.webp" alt="">
+  </div>
+</div>
+
+
+
+<div class="headings-images">Top Related Properties</div>
+<div class="images-section">
+  <div class="image-card">
+  <div class="image-wrapper">
+      <a href="imagedetail.html?img=images/img_2.jpg.webp">
+          <img src="images/img_2.jpg.webp" alt=""></a>
+      <div class="right-badges">
+          <div class="badges-sale">SALE</div>
+          <div class="badges-rent">RENT</div>
+      </div>
+      <div class="heart"><i class="fa-regular fa-heart"></i></div>
+  </div>
+
+  <div class="image-content">
+      <h1 class="main-title">625 S. Berendo St</h1>
+      <div class="loction">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+      </div>
+      
+      <div class="price">$2,265,500</div>
+
+      <div class="house-info">
+          <span>BEDS</span>
+          <span>BATHS</span>
+          <span>SO. FT</span>
+      </div>
+      <div class="house-details">
+          <span>2+</span>
+          <span>2</span>
+          <span>7000</span>
+      </div>
+  </div>
+</div>
+
+
+<div class="image-card">
+  <div class="image-wrapper">
+      <a href="imagedetail.html?img=images/img_3.jpg.webp">
+      <img src="images/img_3.jpg.webp" alt=""></a>
+      <div class="right-badges">
+          <div class="badges-sale">SALE</div>
+          <div class="badges-rent">RENT</div>
+      </div>
+      <div class="heart h-active"><i class="fa-regular fa-heart"></i></div>
+  </div>
+
+  <div class="image-content">
+      <h1 class="main-title">625 S. Berendo St</h1>
+      <div class="loction">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+      </div>
+
+      <div class="price">$2,265,500</div>
+
+      <div class="house-info">
+          <span>BEDS</span>
+          <span>BATHS</span>
+          <span>SO. FT</span>
+      </div>
+      <div class="house-details">
+          <span>2+</span>
+          <span>2</span>
+          <span>7000</span>
+      </div>
+  </div>
+</div>
+
+<div class="image-card">
+  <div class="image-wrapper">
+      <a href="imagedetail.html?img=images/img_4.jpg.webp">
+          <img src="images/img_4.jpg.webp" alt=""></a>
+      <div class="right-badges">
+          <div class="badges-sale">SALE</div>
+          <div class="badges-rent">RENT</div>
+      </div>
+      <div class="heart"><i class="fa-regular fa-heart"></i></div>
+  </div>
+
+  <div class="image-content">
+      <h1 class="main-title">625 S. Berendo St</h1>
+      <div class="loction">
+          <span><i class="fa-solid fa-location-dot"></i></span>
+          <span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+      </div>
+
+      <div class="price">$2,265,500</div>
+
+      <div class="house-info">
+          <span>BEDS</span>
+          <span>BATHS</span>
+          <span>SO. FT</span>
+      </div>
+      <div class="house-details">
+          <span>2+</span>
+          <span>2</span>
+          <span>7000</span>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<!-- footer section start  -->
+
+
+<footer class="footer">
+  <div class="footer-links">
+      <h2 class="footer-heading">About us</h2>
+      <p class="footer-about">orem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+  </div>
+  <div class="footer-links">
+      <h2 class="footer-heading">Navigations</h2>
+      <li><a class="links" href="#home">Home</a></li>
+      <li><a class="links" href="#buy">Buy</a></li>
+      <li><a class="links" href="#rent">Rent</a></li>
+      <li><a class="links" href="#Properties">Properties</a></li>
+  </div>
+  
+
+  <div class="footer-links">
+      <li><a class="links" href="#home">About Us</a></li>
+      <li><a class="links" href="#home">Privacy Policy</a></li>
+      <li><a class="links" href="#home">Contact Us</a></li>
+      <li><a class="links" href="#home">Terms</a></li>
+  </div>
+
+  <div class="footer-links">
+      <h2 class="footer-icon">Follow us</h2>
+      <a class="icon-footer" href="#home"><i class="fa-brands fa-facebook f-icon"></i></a>
+      <a class="icon-footer" href="#home"><i class="fa-brands fa-twitter f-icon"></i></a>
+      <a  class="icon-footer"href="#home"><i class="fa-brands fa-instagram f-icon"></i></a> 
+      <a  class="icon-footer"href="#home"><i class="fa-brands fa-linkedin f-icon"></i></a> 
+  </div>
+</footer>
+
+
+
+
+<div class="copyright">
+  <p class="right">Copyright &copy;2025 All rights reserved | This template is made with  by Colorlib</p>
+</div>
+
+
+</body>
+<script src="index.js"></script>
+</html>
