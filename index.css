@@ -425,62 +425,6 @@ li a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .card {
     position: absolute;
     top: 100%;
@@ -1008,7 +952,10 @@ nav {
   font-size: 18px;
 }
 
-
+.simple-heading{
+  font-size: 20px;
+  color: black;
+}
 
 /* Footer Section Start  */
 
@@ -1025,17 +972,24 @@ nav {
   margin-left: 40px;
   margin-top: 50px;
   margin-bottom: 200px;
+  text-decoration: none;
 }
 
 .footer-heading{
   color: #e1dcdc;
 }
 
+.footer-links li{
+  list-style: none;
+}
+
+
 .links{
   color: #e1dcdc;
   font-size: 15px;
   text-decoration: underline;
 }
+
 .footer-about{
   color: #e1dcdc;
 }
@@ -1070,3 +1024,132 @@ padding-bottom: 50px;
 }
 
 
+
+
+
+
+
+/*================= About.html CSS Section======================  */
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* do column */
+  padding: 60px;
+  margin-top: 60px;
+}
+
+.about-card{
+  padding-left: 100px;
+}
+
+.about-heading{
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text{
+  line-height: 2;
+}
+
+.about-btn{
+padding: 12px 40px;
+font-size: 16px;
+border-color: #0056b3;
+color: #0056b3;
+margin-top: 20px;
+}
+
+.about-btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/*=================== Contact page css Section ========================== */
+
+.form-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+   gap: 30px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.form, 
+.form-info {
+  flex: 1;
+  background: #fff;              /* card ka background */
+  padding: 25px;
+  border-radius: 12px;           /* rounded corner */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);  /* soft shadow */
+}
+
+/* form styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form-btn {
+  padding: 12px;
+  border: none;
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-btn:hover {
+  background: #555;
+}
+
+/* contact info card */
+.form-info h1 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.form-info h4 {
+  margin: 15px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.form-info p {
+  margin: 0;
+  color: #555;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .form-section {
+    flex-direction: column;
+  }
+}

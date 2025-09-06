@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeLand-Buy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="meadiaQuery.css">
+</head>
+<body>
+    
+
+
+  <!-- Hero Section Start -->
+  <header>
+
+
+    <div class="navbar" id="navbar">
+        <div class="logo">Homeland <span class="logo-dot">.</span></div>
+    
+        <!-- Toggle Button -->
+        <div class="toggle-btn" id="toggle-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+    
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>    
+            <li><a href="buy.html">Buy</a></li>    
+            <li><a href="Rent.html">Rent</a></li>        
+            <div class="dropdown">
+                <div class="dropbtn">
+                    <a href="properties.html">Properties</a>
+            </div>
+            </div>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Concat</a></li>
+        </ul>
+    </div>
+    
+    
+
+
+    <!-- Slide 1 -->
+    <div class="slide active" style="background-image: url('images/img_1.jpg.webp');">
+      <div class="content">
+        <div class="sale">Big Sale</div>
+        <h1 class="main-text">Welcome to Our Website</h1>
+        <p class="primary-price-text">Starting at $99</p>
+        <button class="heading-btn">Shop Now</button>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" style="background-image: url('images/img_2.jpg.webp');">
+      <div class="content">
+        <div class="sale">New Arrivals</div>
+        <h1 class="main-text">Latest Collection</h1>
+        <p class="primary-price-text">Discount up to 50%</p>
+        <button class="heading-btn">Explore</button>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" style="background-image: url('images/img_3.jpg.webp');">
+      <div class="content">
+        <div class="sale">Hot Deal</div>
+        <h1 class="main-text">Best Quality Products</h1>
+        <p class="primary-price-text">Starting from $49</p>
+        <button class="heading-btn">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide" style="background-image: url('images/img_4.jpg.webp');">
+      <div class="content">
+        <div class="sale">Limited Offer</div>
+        <h1 class="main-text">Trendy Fashion</h1>
+        <p class="primary-price-text">Special Price Today</p>
+        <button class="heading-btn">Get Offer</button>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide" style="background-image: url('images/img_5.jpg.webp');">
+      <div class="content">
+        <div class="sale">Exclusive</div>
+        <h1 class="main-text">Shop the Look</h1>
+        <p class="primary-price-text">New Style 2025</p>
+        <button class="heading-btn">See More</button>
+      </div>
+    </div>
+  </header>
+  <!-- Hero Section End -->
+
+
+  <div class="card-section">
+    <div class="card">
+      <div class="field">
+        <label for="listing-type">LISTING TYPE</label>
+        <select id="listing-type">
+          <option value="">Select Type</option>
+          <option value="Condo">Condo</option>
+          <option value="Commercial Building">Commercial Building</option>
+          <option value="Land Property">Land Property</option>
+        </select>
+      </div>
+  
+      <div class="field">
+        <label for="offer-type">OFFER TYPE</label>
+        <select id="offer-type">
+          <option value="">Select Offer</option>
+          <option value="For Sale">For Sale</option>
+          <option value="For Rent">For Rent</option>
+          <option value="For Lease">For Lease</option>
+        </select>
+      </div>
+  
+      <div class="field">
+        <label for="city-type">SELECT CITY</label>
+        <select id="city-type">
+          <option value="">Select City</option>
+          <option value="New York">New York</option>
+          <option value="Los Angeles">Los Angeles</option>
+          <option value="Chicago">Chicago</option>
+        </select>
+      </div>
+  
+      <div class="field">
+        <button class="secondry-btn">Search</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<nav>
+<div class="minibar" id="mini-navbar">
+    <div class="icon-btn">
+    <i class="fa-solid fa-table-cells change-page" data-link="index.html"></i>
+    <i class="fa-solid fa-grip change-page" data-link="subIndex.html"></i>
+    </div>
+
+    <ul class="mini-menu">    
+        <li><a href=".home">ALL</a></li>    
+        <li><a href=".home">Rent</a></li>        
+        <li><a href=".home">Sale</a></li>        
+        <div class="field">
+        
+        <div class="mini-field">            
+        <select id="sort-type">
+            <option value="">Sort by</option>
+            <option value="Price Ascending">Price Ascending</option>
+            <option value="Price Descending">Price Descending</option>
+        </select>
+          </div>    
+    </ul>
+</nav>
+
+<div class="loader" id="loader"></div>
+
+
+<!-- images section start  -->
+
+
+<div class="images-section" id="rent">
+    <div class="image-card">
+    <div class="image-wrapper">
+        <a href="imagedetail.html?img=images/img_2.jpg.webp">
+            <img src="images/img_2.jpg.webp" alt=""></a>
+        <div class="right-badges">
+            <div class="badges-sale">SALE</div>
+        </div>
+        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+    </div>
+
+    <div class="image-content">
+        <h1 class="main-title">625 S. Berendo St</h1>
+        <div class="loction">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+        </div>
+        
+        <div class="price">$2,265,500</div>
+
+        <div class="house-info">
+            <span>BEDS</span>
+            <span>BATHS</span>
+            <span>SO. FT</span>
+        </div>
+        <div class="house-details">
+            <span>2+</span>
+            <span>2</span>
+            <span>7000</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="image-card">
+    <div class="image-wrapper">
+        <a href="imagedetail.html?img=images/img_3.jpg.webp">
+        <img src="images/img_3.jpg.webp" alt=""></a>
+        <div class="right-badges">
+            <div class="badges-sale">SALE</div>
+            
+        </div>
+        <div class="heart h-active"><i class="fa-regular fa-heart"></i></div>
+    </div>
+
+    <div class="image-content">
+        <h1 class="main-title">625 S. Berendo St</h1>
+        <div class="loction">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+        </div>
+
+        <div class="price">$2,265,500</div>
+
+        <div class="house-info">
+            <span>BEDS</span>
+            <span>BATHS</span>
+            <span>SO. FT</span>
+        </div>
+        <div class="house-details">
+            <span>2+</span>
+            <span>2</span>
+            <span>7000</span>
+        </div>
+    </div>
+</div>
+
+<div class="image-card">
+    <div class="image-wrapper">
+        <a href="imagedetail.html?img=images/img_4.jpg.webp">
+            <img src="images/img_4.jpg.webp" alt=""></a>
+        <div class="right-badges">
+            <div class="badges-sale">SALE</div>
+            
+        </div>
+        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+    </div>
+
+    <div class="image-content">
+        <h1 class="main-title">625 S. Berendo St</h1>
+        <div class="loction">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+        </div>
+
+        <div class="price">$2,265,500</div>
+
+        <div class="house-info">
+            <span>BEDS</span>
+            <span>BATHS</span>
+            <span>SO. FT</span>
+        </div>
+        <div class="house-details">
+            <span>2+</span>
+            <span>2</span>
+            <span>7000</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="image-card">
+    <div class="image-wrapper">
+        <a href="imagedetail.html?img=images/img_5.jpg.webp">
+            <img src="images/img_5.jpg.webp" alt=""></a>
+        <div class="right-badges">
+            <div class="badges-sale">SALE</div>
+            
+        </div>
+        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+    </div>
+
+    <div class="image-content">
+        <h1 class="main-title">625 S. Berendo St</h1>
+        <div class="loction">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+        </div>
+
+        <div class="price">$2,265,500</div>
+
+        <div class="house-info">
+            <span>BEDS</span>
+            <span>BATHS</span>
+            <span>SO. FT</span>
+        </div>
+        <div class="house-details">
+            <span>2+</span>
+            <span>2</span>
+            <span>7000</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="image-card">
+    <div class="image-wrapper">
+        <a href="imagedetail.html?img=images/img_6.jpg.webp">
+            <img src="images/img_6.jpg.webp" alt=""></a>
+        <div class="right-badges">
+            <div class="badges-sale">SALE</div>
+            
+        </div>
+        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+    </div>
+
+    <div class="image-content">
+        <h1 class="main-title">625 S. Berendo St</h1>
+        <div class="loction">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+        </div>
+
+        <div class="price">$2,265,500</div>
+
+        <div class="house-info">
+            <span>BEDS</span>
+            <span>BATHS</span>
+            <span>SO. FT</span>
+        </div>
+        <div class="house-details">
+            <span>2+</span>
+            <span>2</span>
+            <span>7000</span>
+        </div>
+    </div>
+</div>
+
+<div class="image-card">
+    <div class="image-wrapper">
+        <a href="imagedetail.html?img=images/img_7.jpg.webp">
+            <img src="images/img_7.jpg.webp" alt=""></a>
+        <div class="right-badges">
+            <div class="badges-sale">SALE</div>
+            
+        </div>
+        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+    </div>
+
+    <div class="image-content">
+        <h1 class="main-title">625 S. Berendo St</h1>
+        <div class="loction">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+        </div>
+
+        <div class="price">$2,265,500</div>
+
+        <div class="house-info">
+            <span>BEDS</span>
+            <span>BATHS</span>
+            <span>SO. FT</span>
+        </div>
+        <div class="house-details">
+            <span>2+</span>
+            <span>2</span>
+            <span>7000</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="image-card">
+    <div class="image-wrapper">
+        <a href="imagedetail.html?img=images/img_8.jpg.webp">
+            <img src="images/img_8.jpg.webp" alt=""></a>
+        <div class="right-badges">
+            <div class="badges-sale">SALE</div>
+            
+        </div>
+        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+    </div>
+
+    <div class="image-content">
+        <h1 class="main-title">625 S. Berendo St</h1>
+        <div class="loction">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+        </div>
+
+        <div class="price">$2,265,500</div>
+
+        <div class="house-info">
+            <span>BEDS</span>
+            <span>BATHS</span>
+            <span>SO. FT</span>
+        </div>
+        <div class="house-details">
+            <span>2+</span>
+            <span>2</span>
+            <span>7000</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="image-card">
+    <div class="image-wrapper">
+        <a href="imagedetail.html?img=images/img_5.jpg.webp">
+            <img src="images/img_5.jpg.webp" alt=""></a>
+        <div class="right-badges">
+            <div class="badges-sale">SALE</div>
+            
+        </div>
+        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+    </div>
+
+    <div class="image-content">
+        <h1 class="main-title">625 S. Berendo St</h1>
+        <div class="loction">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+        </div>
+
+        <div class="price">$2,265,500</div>
+
+        <div class="house-info">
+            <span>BEDS</span>
+            <span>BATHS</span>
+            <span>SO. FT</span>
+        </div>
+        <div class="house-details">
+            <span>2+</span>
+            <span>2</span>
+            <span>7000</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="image-card">
+    <div class="image-wrapper">
+        <a href="imagedetail.html?img=images/img_3.jpg.webp">
+            <img src="images/img_3.jpg.webp" alt=""></a>
+        <div class="right-badges">
+            <div class="badges-sale">SALE</div>
+            
+        </div>
+        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+    </div>
+
+    <div class="image-content">
+        <h1 class="main-title">625 S. Berendo St</h1>
+        <div class="loction">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span> 625 S. Berendo St Unit 607 Los Angeles, CA 90005</span>
+        </div>
+
+        <div class="price">$2,265,500</div>
+
+        <div class="house-info">
+            <span>BEDS</span>
+            <span>BATHS</span>
+            <span>SO. FT</span>
+        </div>
+        <div class="house-details">
+            <span>2+</span>
+            <span>2</span>
+            <span>7000</span>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="number">
+    <p class="active">1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <p>...</p>
+    <p>10</p>
+</div>
+
+<!----------------------- Choose Section start ---------------------- -->
+
+<div class="chooes-us" id="about">
+    <h1 class="main-heading">WHY CHOOSE US</h1>
+    <p class="simole-text">We provide reliable, innovative, and customer-focused solutions designed to meet your needs. Our team is committed to delivering quality service, ensuring trust, and exceeding expectations in every project we handle.</p>
+</div>
+
+<div class="choose-plan">
+    <div class="research">
+        <div class="icon"><i class="fa-notdog fa-solid fa-gift i"></i></div>
+        <div class="simple-heading">Quality Services</div>
+        <div class="simple-text">We ensure premium quality in every step of our work, delivering value that stands out and benefits our clients in the long run.</div>
+        <button class="about-btn">Read More</button>
+    </div>
+    <div class="research">
+        <div class="icon"><i class="fa-notdog fa-solid fa-globe i"></i></div>
+        <div class="simple-heading">Global Reach</div>
+        <div class="simple-text">Our services are designed to cater to clients worldwide, making it easier for you to connect, grow, and expand your business globally.</div>
+        <button class="about-btn">Read More</button>
+    </div>
+    <div class="research">
+        <div class="icon"><i class="fa-notdog fa-solid fa-sun i"></i></div>
+        <div class="simple-heading">Innovative Solutions</div>
+        <div class="simple-text">We believe in creativity and innovation, providing solutions that are modern, efficient, and tailored to your specific requirements.</div>
+        <button class="about-btn">Read More</button>
+    </div>
+</div>
+
+
+<!-- footer section start  -->
+
+
+<footer class="footer">
+    <div class="footer-links">
+        <h2 class="footer-heading">About us</h2>
+        <p class="footer-about">We are dedicated to providing trusted real estate solutions. Our mission is to connect people with their dream homes and profitable investment opportunities with transparency and care.</p>
+    </div>
+    <div class="footer-links">
+        <h2 class="footer-heading">Navigations</h2>
+        <li><a class="links" href="#home">Home</a></li>
+        <li><a class="links" href="#buy">Buy</a></li>
+        <li><a class="links" href="#rent">Rent</a></li>
+        <li><a class="links" href="#Properties">Properties</a></li>
+    </div>
+    
+
+    <div class="footer-links">
+        <li><a class="links" href="#home">About Us</a></li>
+        <li><a class="links" href="#home">Privacy Policy</a></li>
+        <li><a class="links" href="#home">Contact Us</a></li>
+        <li><a class="links" href="#home">Terms</a></li>
+    </div>
+
+    <div class="footer-links">
+        <h2 class="footer-icon">Follow us</h2>
+        <a class="icon-footer" href="#home"><i class="fa-brands fa-facebook f-icon"></i></a>
+        <a class="icon-footer" href="#home"><i class="fa-brands fa-twitter f-icon"></i></a>
+        <a  class="icon-footer"href="#home"><i class="fa-brands fa-instagram f-icon"></i></a> 
+        <a  class="icon-footer"href="#home"><i class="fa-brands fa-linkedin f-icon"></i></a> 
+    </div>
+</footer>
+
+
+
+
+<div class="copyright">
+    <p class="right">Copyright &copy;2025 All rights reserved | This template is made with  by Colorlib</p>
+</div>
+
+
+
+</body>
+<script src="index.js"></script>
+</html>

@@ -3,13 +3,15 @@
     margin: 0;
 }
 
+html, body{
+  overflow-x: hidden;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body{
-  overflow-x: hidden;
-}
+
 
 .main-heading{
   line-height: 2.5;
@@ -611,7 +613,7 @@ nav {
     justify-content: space-between;
     position: relative;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 19vh;
     padding-right: 10%;
     z-index: 2;
 }
